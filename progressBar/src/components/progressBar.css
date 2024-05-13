@@ -1,0 +1,37 @@
+.progress-bar-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress::after {
+    content: attr(data-label);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-box {
+    height: 100%;
+    width: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    /* Smooth width and color transition */
+}
